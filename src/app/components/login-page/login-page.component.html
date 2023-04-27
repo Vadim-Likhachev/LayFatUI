@@ -1,0 +1,32 @@
+<form class="login-page__form text-start"
+      [formGroup]="form"
+      (submit)="auth()">
+    <h1 class="login-page__header">Добро пожаловать!</h1>
+    <div class="login-page__email">
+      <input class="login-page__form-input form-control"
+          formControlName="email" 
+          type="email"  
+          placeholder="Email">
+      <div class="danger-text"
+            *ngIf="form.get('email')?.invalid && form.get('email')?.touched">
+            Проверьте корректность логина
+      </div>
+    </div>
+    <div class="login-page__password">
+      <input class="login-page__form-input form-control" 
+          formControlName="password"
+          type="password" 
+          placeholder="Пароль">
+      <div class="danger-text"
+            *ngIf="form.get('password')?.invalid && form.get('password')?.touched">
+            Проверьте корректность пароля
+      </div>
+    </div>
+    <button class="btn-auth" 
+        type="submit" 
+        [disabled]="form.invalid || form.disabled">
+          Войти
+    </button>
+</form>
+
+  <a routerLink="/register" class="btn btn-link mt-2">Зарегистрироваться</a>

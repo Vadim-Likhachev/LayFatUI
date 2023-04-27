@@ -1,0 +1,28 @@
+// Variables and mixins
+@import 'utils';
+
+// Commons
+@import 'common/typography';
+@import 'common/buttons';
+@import 'common/fonts';
+@import 'common/forms';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url('../assets/auth-bg.png');
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-size: cover;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -11,6 +11,7 @@ import { SiteLayoutComponent } from './shared/layouts/site-layout/site-layout.co
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { TokenInterceptors } from './shared/classes/token.interceptors';
+import { CabinetModule } from './components/cabinet/cabinet.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TokenInterceptors } from './shared/classes/token.interceptors';
     RegisterPageModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    CabinetModule
   ],
   providers: [
     {

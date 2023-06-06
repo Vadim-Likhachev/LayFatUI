@@ -14,15 +14,27 @@
     box-sizing: border-box;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+
 a {
     text-decoration: none;
 }
 
-body {
-    background-image: url('../assets/auth-bg.png');
-    background-repeat: no-repeat;
-    background-color: #000000;
+html {
+
+    background-image: url(../assets/auth-bg.png) ;
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-}
-html, body { height: 100%; }
+    
+    }
+
+html, body { height: auto; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

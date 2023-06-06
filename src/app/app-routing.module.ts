@@ -14,7 +14,8 @@ const routes: Routes = [
        { path: 'register', component: RegisterPageComponent}
     ]},
     {path: '', component: SiteLayoutComponent, canActivate: [AuthGuard], children: [
-        { path: 'cabinet', component: CabinetComponent},
+        { path: '', redirectTo: '/cabinet', pathMatch: 'full'},
+        { path: 'cabinet', component: CabinetComponent}
     ]}
 ]
 

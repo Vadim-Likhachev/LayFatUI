@@ -1,0 +1,152 @@
+.profile { 
+    &__person {
+        display: flex;
+        margin: 3.4375rem 5rem 0 5rem;
+        padding-bottom: 34px;
+        position: relative;
+        
+
+        &-img {
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+        }
+    }
+
+    &__name {
+        margin-top: 32px;
+        margin-left: 26%;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 115%;
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+    }
+
+    &__info {
+        background-color:  #F5F5F5;
+        height: 100%;
+        padding: 2.75rem 0 2.75rem 28%;
+
+        &-container {
+            max-width: 62rem;  
+            text-align: end;
+        }
+
+        &-header {
+            font-weight: 650;
+            font-size: 32px;
+            line-height: 115%;
+            color: #000000;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #E0E0E0;
+            width: 100%;
+            display: flex;
+
+            img {
+                cursor: pointer;
+            }
+        }
+        
+    }
+
+    &__data {
+        padding: 2rem 3rem 2.5rem;
+        background: #FFFFFF;
+        border-radius: 15px;
+        text-align: left;
+
+        &-form {
+            margin-top: 1.5rem;
+        }
+
+        &-list {
+            display: flex;
+        }
+
+        &-item {
+            text-align: center;
+            width: 15rem;
+            margin-right: 1.25rem;
+        }
+
+        &-label {
+            display: block;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 115%;
+            color: #BDBDBD;
+        }
+
+        &-input {
+            display: block;
+            border: 2px solid #51B8FF;
+            border-radius: 2.5rem; 
+            padding: .355rem 0;  
+            width: 100%;
+            margin-top: .5rem;
+            text-align: center;
+
+            &::placeholder {
+                color: #51B8FF;
+            }
+
+            &:disabled {
+                background-color: #fff;
+            }
+        }
+    }
+
+    &__team {
+        width: 480px;
+        height: 334px;
+        background: #FFFFFF;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    &__plug {
+        background: #FFFFFF;
+        border-radius: 15px;
+        text-align: center;
+        height: 247px;
+    }
+
+    &__logout-btn {
+        border: 2px solid #FF3D75;
+        border-radius: 2.5rem;
+        width: 360px;
+        height: 60px;
+        color: rgba(255, 61, 117, 1);
+        margin-top: 2.75rem; 
+        margin-left: auto;   
+    }
+
+    &__submit {
+        margin-top: 3rem;
+        padding-top: 1.5rem;
+        text-align: right;
+        border-top: 1px solid #E0E0E0;
+
+        &-btn {
+            background: #51B8FF;
+            border-radius: 2.5rem;
+            border: none;
+            padding: .625rem 3.375rem;
+            font-weight: 650;
+            font-size: 24px;
+            line-height: 115%;
+            text-align: center;
+            color: #FFFFFF;
+
+            &_cancel {
+                border: 2px solid #BDBDBD;
+                color: #BDBDBD;
+                margin-right: 1.5rem;
+                background-color:#FFFFFF
+            }
+        }
+    }
+}

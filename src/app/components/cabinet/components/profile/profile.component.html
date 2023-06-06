@@ -1,0 +1,56 @@
+<div class="profile__person">
+    <span class="profile__person-img"></span>
+    <div class="profile__name">
+        <h2 class="profile__p mb-0">Иван Александровский</h2>
+        <span>115</span>
+    </div>
+</div>
+
+<div class="profile__info">
+    <div class="profile__info-container">
+        <div class="d-flex justify-content-between">
+            <div class="profile__team"> Здесь будут команды</div>
+            <div class="profile__team"> Здесь будут лиги</div>
+        </div>
+        
+        <div class="profile__data w-100 mt-4">
+            <div class="profile__info-header">
+                <h3 class="me-3">Мои данные</h3>
+                <img src="../../../../../assets/edit_btn.svg" alt="Edit button" (click)="showSubmit()"/>
+            </div>
+
+            <form #dataForm="ngForm" class="profile__data-form" (ngSubmit)="submit(dataForm)">
+                <div class="profile__data-list">
+                    <div class="profile__data-item">
+                        <label class="profile__data-label">Рост</label>
+                        <input [disabled]="!showSubmitBlock" class="profile__data-input" name="height" placeholder="170 см" ngModel/>
+                    </div>
+    
+                    <div class="profile__data-item">
+                        <span class="profile__data-label">Вес</span>
+                        <input [disabled]="!showSubmitBlock" class="profile__data-input" name="weight" placeholder="70 кг" ngModel/>
+                    </div>
+    
+                    <div class="profile__data-item">
+                        <span class="profile__data-label">Индек массы тела</span>
+                        <span class="profile__data-input">170 см</span>
+                    </div>
+                </div>
+
+                <ng-container *ngIf="showSubmitBlock">
+                    <div class="profile__submit">
+                        <button class="profile__submit-btn profile__submit-btn_cancel" type="button" (click)="hideSubmit()">Отменить</button>
+                        <button class="profile__submit-btn" type="submit">Сохранить</button>
+                    </div>
+                </ng-container>
+            </form>
+        </div>
+
+        <div class="profile__plug w-100 mt-4">А тут прогресс по тренировкам</div>
+
+        <button class="profile__logout-btn" type="button">Выйти из аккаунта</button>
+    </div>
+
+    
+</div>
+
